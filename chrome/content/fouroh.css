@@ -1,0 +1,49 @@
+
+#blcontainer { position: relative; 
+  background-color: #b9daff; /* FFe489 */
+  width: 100% ; 
+  padding: 4px 0 4px 4px; 
+  font-size: 100%;
+  text-align: left; } 
+
+#bltop, #blbottom { 
+background-color: #a9c7da; border-top: 1px solid #99aacf; width: 100%; 
+margin: 8px 0 8px -4px; padding: 4px; 
+text-align: left;
+}
+
+#blbottom { height: 20px; display: none; margin-top: 0; font-size: 100%; } 
+#bltop { margin-bottom: 0; font-size: 105%; 
+ border-bottom: 1px solid #99aacf; 
+} 
+
+#bltop a, #blbottom a, #sharebox a { font-weight: bold; } 
+a.current { text-decoration: none; color: black; } 
+
+#blresultsbox { font-size: 90%; } 
+.fourohresult { margin-left: 4px; }  
+
+.fourohresult img.amazon { list-style-image: url('http://spandexfox.com/media/amazon-icon.png'); }
+.fourohresult img.ebay { list-style-image: url('http://spandexfox.com/media/ebay-icon.png');  }
+
+.fourohresult { padding: 2px; height: 16px; clear: left;}
+.fourohresult:hover, .fourohresult:hover * {
+ /* background-color: #dfd489; */
+}
+
+#sharebox, #feedbox { position: absolute; right: 70px; top: 20px; 
+padding: 20px; width: 400px; background-color: #d0d0d0; border: 1px solid white;  } 
+#feedbox { padding: 8px 20px 8px 20px; } 
+#screenshot {	position:absolute; border:1px solid #ccc;	background:#333;	padding:5px;	color:#fff; z-index: 100; } 
+#feedbackcomments, #sharecomments { font-family: arial; font-size: 9pt; } 
+
+#sharebox label {
+ display: block;
+ float: left; 
+ width: 100px;
+}
+
+#sharebox input[type=text] {
+  width: 210px;
+}
+

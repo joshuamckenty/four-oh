@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="Four-Oh Configuration" id="fourohConfig"
+  buttons="accept"
+  >
+  
+  <script type="application/x-javascript" src="chrome://fouroh/content/options.js"/>
+  <script type="application/x-javascript" src="chrome://fouroh/content/utils.js"/>
+
+  <vbox style="max-width: 400px; min-width: 400px">
+    Foo Foo. Guess what? The Four-Oh plugin is so simple, there's nothing for you to do here. Sorry!
+  </vbox>
+</dialog>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <Description RDF:about="rdf:#$H6+5G"
+                   em:id="{a463f10c-3994-11da-9945-000d60ca027b}"
+                   em:minVersion="1.0"
+                   em:maxVersion="2.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:name="Four-Oh"
+                   em:id="fouroh@spandexfox.com"
+                   em:version="1.1"
+                   em:description="Stop Waiting. Start Watching. (Or Listening, Playing, Working, Coding, Living...). Amazon.com, Seeds: 1,000,000. Leeches: 0. "
+                   em:creator="Joshua McKenty; http://www.cognition.ca"
+                   em:homepageURL="http://www.spandexfox.com"
+                   em:optionsURL="chrome://fouroh/content/options.xul">
+    <em:targetApplication RDF:resource="rdf:#$C6+5G"/>
+    <em:targetApplication RDF:resource="rdf:#$H6+5G"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$C6+5G"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.1b2pre" />
+</RDF:RDF>

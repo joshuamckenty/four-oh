@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="fouroh-overlay">
+  <script type="application/x-javascript"
+          src="chrome://fouroh/content/jquery.js" />
+  <script type="application/x-javascript"
+          src="chrome://fouroh/content/fouroh.js" />
+  <script type="application/x-javascript"
+          src="chrome://fouroh/content/humanmsg.js" />
+  <script type="application/x-javascript"
+          src="chrome://fouroh/content/utils.js" />
+  <menupopup id="menu_ToolsPopup">
+    <menuitem insertafter="devToolsSeparator" 
+      label="Four-Oh Settings"
+      accesskey="D"
+      oncommand="openDialog('chrome://fouroh/content/options.xul','Four-Oh Settings', 'modal=yes');" />
+  </menupopup>
+  
+  <toolbox id="navigator-toolbox">
+    <panel id="four-o-funny"
+           onpopupshown="funny.focused()"
+           onpopuphiding="funny.hidden()">
+      <vbox flex="1">
+        <hbox id="funny-bar">
+          <label value="funny:" />
+          <textbox id="funny-input"
+                   value=""
+                   oninput="funny.input(event)"
+                   class="plain"
+                   flex="1" />
+        </hbox>
+        <vbox id="funny-results" />
+        <hbox id="funny-details">
+          <description id="funny-about-results" hidden="true" />
+          <description id="funny-no-results" hidden="true">Four-Oh Results - None.</description>
+          <vbox id="funny-help">
+            <description>Start typing to search the web, results will appear here</description>
+            <description>Use arrow keys to select the result and press enter to visit</description>
+            <description>To search within the current site, start your query with @</description>
+          </vbox>
+          <spacer flex="1" />
+          <vbox>
+            <spacer flex="1" />
+            <label id="funny-author" value="spandexfox" onclick="funny.about()" />
+          </vbox>
+        </hbox>
+      </vbox>
+    </panel>
+  </toolbox>
+  
+</overlay>

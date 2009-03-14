@@ -1,0 +1,4 @@
+overlay chrome://browser/content/browser.xul chrome://fouroh/content/browserOverlay.xul
+
+content  fouroh    chrome/content/
+skin     fouroh    classic/1.0	chrome/skin/
